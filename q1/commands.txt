@@ -1,0 +1,6 @@
+subset + column means ...
+y <- subset(x, x$Ozone > 31 & x$Temp > 90)
+colMeans(y)
+
+max ...
+apply(y,2,max,na.rm=1)
